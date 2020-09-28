@@ -28,8 +28,36 @@ namespace Numbers
             double pi = 3.1415926553589793;
             richTextBox1.AppendText(pi.ToString() + "\n");
 
+            string st = "three";
+            try
+            {
+                int it = int.Parse(st);
+            }
+            catch
+            {
+                MessageBox.Show(st + " is not an integer");
+            }
 
+            string s2 = "3";
+            try
+            {
+                int i2 = int.Parse(s2);
+            }
+            catch
+            {
+                MessageBox.Show(s2 + " is not an integer");
+                int i2 = 0;
+            }
 
+            string s3 = "pi";
+            try
+            {
+                double d2 = double.Parse(s3);
+            }
+            catch
+            {
+                double d2 = 0;
+            }
         }
 
         private void Form1_Load(object sender, EventArgs e)
